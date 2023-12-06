@@ -17,7 +17,7 @@ router.post(
   ctrl.resendVerifyEmail
 );
 
-router.post('/login', validateBody(schemas.loginSchema), ctrl.login);
+router.post('/signin', validateBody(schemas.loginSchema), ctrl.login);
 
 router.post('/logout', authenticate, ctrl.logout);
 
